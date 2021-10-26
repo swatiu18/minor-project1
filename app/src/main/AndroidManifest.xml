@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.myclassroom">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MyClass"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyClassroom">
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Saturday"
+            android:exported="true"
+            android:label="Saturday">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TimeTable" />
+        </activity>
+        <activity
+            android:name=".Friday"
+            android:exported="true"
+            android:label="Friday">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TimeTable" />
+        </activity>
+        <activity
+            android:name=".Thursday"
+            android:exported="true"
+            android:label="Thursday">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TimeTable" />
+        </activity>
+        <activity
+            android:name=".Wednesday"
+            android:exported="true"
+            android:label="Wednesday">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TimeTable" />
+        </activity>
+        <activity
+            android:name=".Tuesday"
+            android:exported="true"
+            android:label="Tuesday">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TimeTable" />
+        </activity>
+        <activity
+            android:name=".Monday"
+            android:exported="true"
+            android:label="Monday">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TimeTable" />
+        </activity>
+        <activity
+            android:name=".ToDo"
+            android:exported="true"
+            android:label="To-Do List">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".TimeTable"
+            android:exported="true"
+            android:label="Time Table">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>
